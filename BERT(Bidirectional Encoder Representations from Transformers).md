@@ -1,40 +1,37 @@
-<h3>BERT(Bidirectional Encoder Representations from Transformers)</h3>
+<h3>논문 :: Deep Reinforcement Learning for Dialogue Generation</h3>
 
- - URL : https://keep-steady.tistory.com/19
-
---------------
-
- - Token Embeddings
-   - Word Piece 임베딩 방식
-     - 가장 긴 길이의 sub-word를 하나의 단위로 만듦
-     - 자주 등장하지 않는 단어는 sub-word로 쪼개지게 됨
-     - 모든 언어에 적용 가능
-     - OOV 처리에 효과적, 정확도 상승
- - Sentence Embeddings
-   - 두 개의 문장을 문장 구분자와 함께 합쳐 넣음
-   - 입력 길이를 512subword 이하로 제한함: 길이가 길수록 학습 시간은 제곱으로 증가함
- - Position Embedding
-   - Transformer 모델의 인코더 사용: CNN, RNN이 아닌 Self-Attention 모델 사용
-      ![image](/uploads/cfe7d515b759f2a24ac2837e08057093/image.png)
-     - 입력의 위치에 대해 고려하지 X -> 입력 토큰의 위치 정보를 줘야함
-     - Sinusoid 함수한 Positional encoding을 변형해 Position encoding 사용
- - 위 3가지 임베딩을 취함하여 하나의 임베딩 값으로 만듦
---------------
- - 언어 모델링 구조(Pre-training Bert)
-   - 거대 encoder가 입력 문장들을 임베딩하여 언어 모델링 함
-   - MLM(Masked Language Model)과 NSP(Next Sentence Prediction) 사용
-   - 말뭉치는 MLM. NSP를 적용하기 위해 스스로 라벨을 만들고 수헹함 -> 준지도학습
-   - MLM
-     - 입력 문장에서 임의로 Token을 masking하고 그 Token을 맞추는 방식
-     - 입력의 15% 단어를 [MASK] Token으로 바꿔주어 마스킹함 -> [MASK]가 어떤 단어인지 예측
-     - 미세 조정 시 올바른 예측을 돕도록 마스킹에 노이즈를 섞음
-![image](/uploads/6a0cd1ae2d376f8c1f80052431cdbe0d/image.png)
-   - NSP
-     - 두 문장이 주어졌을때 두 번째 문장이 첫 번째 문장의 바로 다음에 오는 문장인지 여부를 예측하는 방식 -> 두 문장은 [SEP]로 구분
-     - NLI와 QA의 파인튜닝을 위해 두 문장이 연관이 있는지를 맞추도록 학습
-     - 문맥과 순서를 언어모델이 학습할 수 있음
+ - URL : https://arxiv.org/pdf/1606.01541.pdf
+---------------------
+ - 방법
+   - SEQ2SEQ
+   - mutual information model
+     - mutual information responses를 극대화하는 encoder-decoder 모델을 적용
+     - 최적화를 위한 policy gradient methods 사용
+     1. 미리 학습된 SEQ2SEQ를 사용하여, policy model pRL을 초기화함
+     2. input source에 따라 candidate list를 생성
+     3. 각 candidate에 대해 사전에 학습된 SEQ2SEQ와 backward SEQ2SEQ로 부터 mutual information score를 얻음   
+         : mutual information score는 reward로 사용   
+     4. 더 높은 reward로 sequences를 생성하도록, encoder-decoder model에 back-propagated 함   
+         : stochastic gradient descent를 사용하여 encoder-decoder model의 파라미터를 업데이트   
+     5. gradient는 likelihood ratio trick를 사용해 추정
+   - 제안된 RL 모델
 <br>
-
- - 학습된 언어모델 전이학습(Transfer Learning)
-   - 전이학습은 라벨이 주어지므로 지도학습
-   - BERT의 출력에 추가적인 모델을 쌓아 만듦
+ 
+ - 실험   
+   - 데이터
+      - OpenSubtitles dataset에서 “i don’t know what you are taking about”라고 응답할 확률이 가장 낮은 80만 개 시퀀스
+   - 두 Agents의 대화 시뮬레이션
+      1. 첫 번째 agent는 input message의 vector representation에 encoding을 하고 decoding을 시작하여 output을 생성함
+      2. 두 번째 agent는 대화 이력으로 encoding하여 state를 업데이트하고, decoder RNN을 사용하여 응답을 생성함
+      3. 해당 응답은 첫번째 agent로 다시 input됨
+      4. 1~3 과정 반복
+   - 성능측정
+      - 대화 길이   
+![image](/uploads/15627f662f73961d05a0598966319eb2/image.png)      
+      - 다양성     
+![image](/uploads/4f83c2fb7ac73c97f6a78053407f0aad/image.png)        
+      - 사람이 직접 평가    
+![image](/uploads/f8c3e7883e9b57f1650c4cebd8a4eef4/image.png)    
+   - 결과
+      - RL model이 mutual information model 보다 더 많은 대화와 지속적인 대화를 할 수 있음
+      - 대화 중에 관련이 적은 주제로 넘어갈 수 있음
