@@ -8,3 +8,4 @@
 |EmotionX-HSU: Adopting Pre-trained BERT for Emotion Classification|[Link](https://arxiv.org/pdf/1907.09669.pdf)|
 |Multi-Class Twitter Emotion Classification: A New Approach|[Link](https://www.researchgate.net/publication/269670995_Multi-Class_Twitter_Emotion_Classification_A_New_Approach)|
 |EmotionX-IDEA: Emotion BERT – an Affectional Model for Conversation|[Link](https://arxiv.org/pdf/1908.06264.pdf)|
+|GoEmotions: A Dataset of Fine-Grained Emotions|[Link](https://arxiv.org/pdf/2005.00547.pdf)|
