@@ -11,3 +11,4 @@
 |7|[GoEmotions: A Dataset of Fine-Grained Emotions](https://arxiv.org/pdf/2005.00547.pdf)|
 |8|[An Evaluation Dataset for Intent Classification and Out-of-Scope Prediction](https://arxiv.org/pdf/1909.02027.pdf)|
 |9|[A corpus-based approach to classifying emotions using Korean linguistic features](https://link.springer.com/content/pdf/10.1007/s10586-017-0777-8.pdf)|
+|10|[ConveRT: Efficient and Accurate Conversational Representations from Transformers](https://arxiv.org/pdf/1911.03688.pdf)|
