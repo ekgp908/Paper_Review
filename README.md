@@ -26,3 +26,5 @@ weekly paper reviews
    - Integrated Eojeol Embedding for Erroneous Sentence Classification in Korean Chatbots [`paper`](https://arxiv.org/pdf/2004.05744.pdf) [`review`](https://github.com/ekgp908/Paper_Review/blob/master/paper/Integrated_Eojeol_Embedding_for_Erroneous_Sentence_Classification_in_Korean_Chatbots.md)
  - Nov 30 2020
    - Attention-Based Recurrent Neural Network Models for Joint Intent Detection and Slot Filling [`paper`](https://arxiv.org/pdf/1609.01454.pdf) [`review`](https://github.com/ekgp908/Paper_Review/blob/master/paper/Attention-Based_Recurrent_Neural_Network_Models_for_Joint_Intent_Detection_and_Slot_Filling.md)
+ - Dec 07 2020
+   - BERT for Joint Intent Classification and Slot Filling [`paper`](https://arxiv.org/pdf/1902.10909.pdf) [`review`](https://github.com/ekgp908/Paper_Review/blob/master/paper/BERT_for_Joint_Intent_Classification_and_Slot_Filling.md)
