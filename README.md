@@ -28,3 +28,6 @@ weekly paper reviews
    - Attention-Based Recurrent Neural Network Models for Joint Intent Detection and Slot Filling [`paper`](https://arxiv.org/pdf/1609.01454.pdf) [`review`](https://github.com/ekgp908/Paper_Review/blob/master/paper/Attention-Based_Recurrent_Neural_Network_Models_for_Joint_Intent_Detection_and_Slot_Filling.md)
  - Dec 07 2020
    - BERT for Joint Intent Classification and Slot Filling [`paper`](https://arxiv.org/pdf/1902.10909.pdf) [`review`](https://github.com/ekgp908/Paper_Review/blob/master/paper/BERT_for_Joint_Intent_Classification_and_Slot_Filling.md)
+- Dec 14 2020
+   - Slot-Gated Modeling for Joint Slot Filling and Intent Prediction [`paper`](https://www.aclweb.org/anthology/N18-2118.pdf) [`review`](https://github.com/ekgp908/Paper_Review/blob/master/paper/Slot-Gated_Modeling_for_Joint_Slot_Filling_and_Intent_Prediction.md)
+
