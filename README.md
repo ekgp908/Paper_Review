@@ -30,4 +30,6 @@ weekly paper reviews
    - BERT for Joint Intent Classification and Slot Filling [`paper`](https://arxiv.org/pdf/1902.10909.pdf) [`review`](https://github.com/ekgp908/Paper_Review/blob/master/paper/BERT_for_Joint_Intent_Classification_and_Slot_Filling.md)
 - Dec 14 2020
    - Slot-Gated Modeling for Joint Slot Filling and Intent Prediction [`paper`](https://www.aclweb.org/anthology/N18-2118.pdf) [`review`](https://github.com/ekgp908/Paper_Review/blob/master/paper/Slot-Gated_Modeling_for_Joint_Slot_Filling_and_Intent_Prediction.md)
+- Dec 21 2020
+   - Multi-Domain Joint Semantic Frame Parsing using Bi-directional RNN-LSTM [`paper`](https://www.csie.ntu.edu.tw/~yvchen/doc/IS16_MultiJoint.pdf) [`review`](https://github.com/ekgp908/Paper_Review/blob/master/paper/Multi-Domain_Joint_Semantic_Frame_Parsing_using_Bi-directional_RNN-LSTM.md)
 
