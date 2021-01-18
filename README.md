@@ -32,4 +32,5 @@ weekly paper reviews
    - Slot-Gated Modeling for Joint Slot Filling and Intent Prediction [`paper`](https://www.aclweb.org/anthology/N18-2118.pdf) [`review`](https://github.com/ekgp908/Paper_Review/blob/master/paper/Slot-Gated_Modeling_for_Joint_Slot_Filling_and_Intent_Prediction.md)
 - Dec 21 2020
    - Multi-Domain Joint Semantic Frame Parsing using Bi-directional RNN-LSTM [`paper`](https://www.csie.ntu.edu.tw/~yvchen/doc/IS16_MultiJoint.pdf) [`review`](https://github.com/ekgp908/Paper_Review/blob/master/paper/Multi-Domain_Joint_Semantic_Frame_Parsing_using_Bi-directional_RNN-LSTM.md)
-
+- Jan 18 2021
+   - A Stack-Propagation Framework with Token-Level Intent Detection for Spoken Language Understanding [`paper`](https://arxiv.org/pdf/1909.02188.pdf) [`review`](https://github.com/ekgp908/Paper_Review/blob/master/paper/A_Stack-Propagation_Framework_with_Token-Level_Intent_Detection_for_Spoken_Language_Understanding.md)
