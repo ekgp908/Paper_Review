@@ -34,3 +34,5 @@ weekly paper reviews
    - Multi-Domain Joint Semantic Frame Parsing using Bi-directional RNN-LSTM [`paper`](https://www.csie.ntu.edu.tw/~yvchen/doc/IS16_MultiJoint.pdf) [`review`](https://github.com/ekgp908/Paper_Review/blob/master/paper/Multi-Domain_Joint_Semantic_Frame_Parsing_using_Bi-directional_RNN-LSTM.md)
 - Jan 18 2021
    - A Stack-Propagation Framework with Token-Level Intent Detection for Spoken Language Understanding [`paper`](https://arxiv.org/pdf/1909.02188.pdf) [`review`](https://github.com/ekgp908/Paper_Review/blob/master/paper/A_Stack-Propagation_Framework_with_Token-Level_Intent_Detection_for_Spoken_Language_Understanding.md)
+- Jan 25 2021
+   - A Self-Attentive Model with Gate Mechanism for Spoken Language Understanding [`paper`](https://www.aclweb.org/anthology/D18-1417.pdf) [`review`](https://github.com/ekgp908/Paper_Review/blob/master/paper/A_Self-Attentive_Model_with_Gate_Mechanism_for_Spoken_Language_Understanding.md)
