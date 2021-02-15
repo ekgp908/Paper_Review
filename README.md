@@ -36,3 +36,5 @@ weekly paper reviews
    - A Stack-Propagation Framework with Token-Level Intent Detection for Spoken Language Understanding [`paper`](https://arxiv.org/pdf/1909.02188.pdf) [`review`](https://github.com/ekgp908/Paper_Review/blob/master/paper/A_Stack-Propagation_Framework_with_Token-Level_Intent_Detection_for_Spoken_Language_Understanding.md)
 - Jan 25 2021
    - A Self-Attentive Model with Gate Mechanism for Spoken Language Understanding [`paper`](https://www.aclweb.org/anthology/D18-1417.pdf) [`review`](https://github.com/ekgp908/Paper_Review/blob/master/paper/A_Self-Attentive_Model_with_Gate_Mechanism_for_Spoken_Language_Understanding.md)
+- Feb 15 2021
+   - Encoding Syntactic Knowledge in Transformer Encoder for Intent Detection and Slot Filling [`paper`](https://arxiv.org/pdf/2012.11689v1.pdf) [`review`](https://github.com/ekgp908/Paper_Review/blob/master/paper/Encoding_Syntactic_Knowledge_in_Transformer_Encoder_for_Intent_Detection_and_Slot_Filling.md)
